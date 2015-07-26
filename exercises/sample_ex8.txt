@@ -1,0 +1,3 @@
+Hey! I am Shikher's first Python file. 
+I am in a .txt format. Hope you can read the contents and find it amusing. 
+Enjoy.
