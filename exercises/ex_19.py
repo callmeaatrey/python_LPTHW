@@ -23,12 +23,15 @@ for i in range(0,6):
 for i in raw:
 	print "Well, this is %r , which i just added to the list" %i
 
-# make a 2d array
+
 raw_2 = []
 
-for i in range(0,10):
-	raw_2.append([[i]*3])
+# how to make 2d lists (multiple)
+for i in range(0,2):
+	raw_2.append([clubs]+[players])
 
+for i in raw_2:
+	print "%r" %i
 
 
 	
