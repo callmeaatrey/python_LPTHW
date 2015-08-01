@@ -8,10 +8,12 @@ def start():
 	print "Ready?(1/0)"
 
 	ready = raw_input('> ')
-
+	os.system('cls')
 	if ready == '1':	
 		print "\nScene 1: HAGRID sees HARRY for the first when Dudley's shifts their house and decides to go live in a far away place so that they could keep HARRY away from wizards."
+		time.sleep(2)
 		print "\nHAGRID : I carried you in my arms when we dropped you here at these sick people\'s doorstep"
+		time.sleep(2)
 		print "You have got two things to say :"
 		print "1. Who are you?"
 		print "2. Well, you did a great job! You ruined my life. Get outta here. (Hint: Wrong Choice :P)"
@@ -19,10 +21,11 @@ def start():
 		HARRY_1 = raw_input('> ')
 
 		if HARRY_1 == '2':
-			print "HAGRID : Well, looks like you became one of them. I should have never let me touch you. I think i should go. Bye!"
+			print "HAGRID : Well, looks like you became one of them. I should have never let them touch you. I think i should go. Bye!"
 			exit(0)
 		elif HARRY_1 == '1':
 			print "HAGRID :I am HAGRID, the gatekeeper of Hogwarts. Let's go HARRY, my boy. An adventure is waiting for you"
+			time.sleep(3)
 			gringotts()
 			os.system('cls')
 		else:
@@ -36,6 +39,7 @@ def start():
 		start()
 
 def gringotts():
+	os.system('cls')
 	print "Now, you are in diagon alley. You are here to buy some essential things. \n"
 	print "Where do you want to go first?"
 	print "1. Ollivander's (For your wand)"
@@ -47,13 +51,14 @@ def gringotts():
 	money = False
 
 	if harry_2 == '1' and money == False: 
-		print "Ollivanders: I don't sell for free. Go get yourself some money first."
+		print "Ollivanders: I don't sell for free. Go get yourself some money first. Try Gringotts for that."
 		time.sleep(2)
 		os.system('cls')
 		gringotts()
 
 	elif harry_2 == '3' and money == False:
 		print "Pet Shop Owner: Ohh. No money. I know you are famous , boy. But, i have a family to feed. So, go get some money first."
+		print "Try Gringotts for that!"
 		time.sleep(4)
 		os.system('cls')
 		gringotts()
